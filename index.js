@@ -61,7 +61,7 @@ app.use(morgan((tokens,req,res) => {
       ].join(' ')
     
 }))
-
+app.use(express.static('build'))
 
 // app.get('/', (req, res) => {
 //   res.send('<h1>hello mau</h1>')
