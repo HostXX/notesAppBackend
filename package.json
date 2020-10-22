@@ -8,7 +8,7 @@
     "dev": "nodemon index.js",
     "build:ui" : "rm -rf build && cd ../../practicas && npm run build && cp -r build ../practicas_backend/part3 && echo UI build finished",
     "deploy": "git push heroku master",
-    "deploy:full" : "npm run build:ui && git add . && git commit -m 'Deploy full' && npm run deploy && echo Full deploy completed",
+    "deploy:full" : "npm run build:ui && git add . && git commit -m Deploy && npm run deploy && echo Full deploy completed",
     "logs:prod": "heroku logs --tail"
   },
   "author": "",
