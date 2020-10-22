@@ -63,10 +63,6 @@ app.use(morgan((tokens,req,res) => {
 }))
 app.use(express.static('build'))
 
-// app.get('/', (req, res) => {
-//   res.send('<h1>hello mau</h1>')
-// })
-
 app.get('/api/notes', (req, res) => {
   res.json(notes)
 })
