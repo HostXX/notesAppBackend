@@ -1,0 +1,6 @@
+{
+    "events": {
+        "restart": "fuser -k 3001/tcp echo portKilled"
+    },
+    "delay": 1000
+}

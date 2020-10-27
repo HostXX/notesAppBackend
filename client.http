@@ -1,12 +1,17 @@
-GET http://localhost:3001/api/notes HTTP/1.1
+GET http://localhost:3001/api/nots HTTP/1.1
 
 ############
 
-PUT http://localhost:3001/api/notes HTTP/1.1
+POST http://localhost:3001/api/notes HTTP/1.1
 Content-Type: application/json
 
 {
-    "id":0,
-    "content": "HTML is mmg",
-    "important": false
+    "content": "",
+    "important": true
 }
+
+############
+
+GET http://localhost:3001/api/notes/5f9481057e16bed157b1740c HTTP/1.1
+
+############
